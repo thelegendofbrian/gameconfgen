@@ -1,17 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Don't Starve Together Config Generator</h1>
+    <ConfigBlock
+      v-for="item in spoofData"
+      :key="item.configName"
+      :config='item'
+    />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ConfigBlock from './components/ConfigBlock.vue'
+import Sample from './sample.json'
 
 export default {
   name: 'App',
+  data: function () {
+    return {
+      spoofData: Sample
+    }
+  },
   components: {
-    HelloWorld
+    ConfigBlock
   }
 }
 </script>
@@ -23,6 +33,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 10px;
 }
 </style>

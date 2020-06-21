@@ -1,0 +1,102 @@
+[
+    {
+      "configName":"Starting location",
+      "configDesc":"Rawr I'm a description",
+      "displayType":0,
+      "defaultOption":1,
+      "options":[
+        {
+          "name":"Starting location 1",
+          "desc":"The first starting location"
+        },
+        {
+          "name":"Starting location 2",
+          "desc":"The second starting location"
+        },
+        {
+          "name":"Starting location 3",
+          "desc":"The third starting location"
+        }
+      ]
+    },
+    {
+      "configName":"Starting location2",
+      "configDesc":"Rawr I'm a description",
+      "displayType":1,
+      "defaultOption":1,
+      "options":[
+        {
+          "name":"Starting location 1",
+          "desc":"The first starting location"
+        },
+        {
+          "name":"Starting location 2",
+          "desc":"The second starting location"
+        },
+        {
+          "name":"Starting location 3",
+          "desc":"The third starting location"
+        }
+      ]
+    },
+    {
+      "configName":"Starting location3",
+      "configDesc":"Rawr I'm a description",
+      "displayType":2,
+      "defaultOption":1,
+      "options":[
+        {
+          "name":"Starting location 1",
+          "desc":"The first starting location"
+        },
+        {
+          "name":"Starting location 2",
+          "desc":"The second starting location"
+        },
+        {
+          "name":"Starting location 3",
+          "desc":"The third starting location"
+        }
+      ]
+    },
+    {
+      "configName":"Starting location3",
+      "configDesc":"Rawr I'm a description",
+      "displayType":3,
+      "defaultOption":1,
+      "options":[
+        {
+          "name":"Starting location 1",
+          "desc":"The first starting location"
+        },
+        {
+          "name":"Starting location 2",
+          "desc":"The second starting location"
+        },
+        {
+          "name":"Starting location 3",
+          "desc":"The third starting location"
+        }
+      ]
+    },
+    {
+      "configName":"Starting location3",
+      "configDesc":"Rawr I'm a description",
+      "displayType":4,
+      "defaultOption":1,
+      "options":[
+        {
+          "name":"Starting location 1",
+          "desc":"The first starting location"
+        },
+        {
+          "name":"Starting location 2",
+          "desc":"The second starting location"
+        },
+        {
+          "name":"Starting location 3",
+          "desc":"The third starting location"
+        }
+      ]
+    }
+  ]
