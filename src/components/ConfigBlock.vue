@@ -5,27 +5,27 @@
 
     <template v-if="config.displayType === 0">
       <label>{{ config.options[sliderValue].name }}</label><br>
-      <input type="range" min=0 :max="config.options.length-1" v-model="sliderValue" >
+      <input type="range" min=0 :max="config.options.length-1" :name="config.configId" v-model="sliderValue" >
     </template>
 
     <template v-if="config.displayType === 1">
       <span v-for="item in config.options" :key="item.name">
-        <input type="radio" :name="config.configName" :value="item.name" v-model="radioValue"/>
+        <input type="radio" :name="config.configId" :value="item.id" v-model="radioValue"/>
         <label>{{ item.name }}</label><br>
       </span>
     </template>
 
     <template v-if="config.displayType === 2">
-      <input type="text" v-model="textValue" />
+      <input type="text" :name="config.configId" v-model="textValue" />
     </template>
 
     <template v-if="config.displayType === 3">
-      <input type="checkbox" :id="config.configName" v-model="checkboxValue" />
+      <input type="checkbox" :name="config.configId" :id="config.configId" v-model="checkboxValue" />
     </template>
 
     <template v-if="config.displayType === 4">
-      <select v-model="selectValue">
-        <option v-for="item in config.options" :key="item.name" :value="item.name">
+      <select :name="config.configId" v-model="selectValue">
+        <option v-for="item in config.options" :key="item.id" :value="item.id">
           {{ item.name }}
         </option>
       </select>
@@ -44,13 +44,13 @@ export default {
     if (this.config.displayType === 0) {
       return {sliderValue:this.config.defaultOption}
     } else if (this.config.displayType === 1) {
-      return {radioValue:this.config.options[this.config.defaultOption].name}
+      return {radioValue:this.config.options[this.config.defaultOption].id}
     } else if (this.config.displayType === 2) {
       return {textValue:this.config.defaultOption}
     } else if (this.config.displayType === 3) {
-      return {checkboxValue:this.config.options[this.config.defaultOption].name}
+      return {checkboxValue:this.config.options[this.config.defaultOption].id}
     } else if (this.config.displayType === 4) {
-      return {selectValue:this.config.options[this.config.defaultOption].name}
+      return {selectValue:this.config.options[this.config.defaultOption].id}
     }
   }
 }
