@@ -2,11 +2,14 @@
   <div id="app">
     <h1>Don't Starve Together Config Generator</h1>
     <form action="/getconfig" method="get">
-      <ConfigBlock
-        v-for="item in spoofData"
-        :key="item.configName"
-        :config='item'
-      />
+      <template v-for="entry in spoofData">
+        <h2 :key="entry.category">{{ entry.category }}</h2>
+        <ConfigBlock
+          v-for="item in entry.contents"
+          :key="item.configId"
+          :config='item'
+        />
+      </template>
       <button type="submit">Generate config</button>
     </form>
   </div>

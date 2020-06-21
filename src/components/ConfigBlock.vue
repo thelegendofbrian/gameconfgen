@@ -1,6 +1,6 @@
 <template>
   <div class="config-block">
-    <h2>{{ config.configName }}</h2>
+    <h3>{{ config.configName }}</h3>
     <p>{{ config.configDesc }}</p>
 
     <template v-if="config.displayType === 0">
@@ -36,7 +36,6 @@
 
 <script>
 export default {
-  name: 'YOLO',
   props: {
     config: Object
   },
