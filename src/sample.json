@@ -1,100 +1,192 @@
 [
     {
-      "configName":"Starting location",
+      "configName":"Preset",
       "configDesc":"Rawr I'm a description",
-      "displayType":0,
-      "defaultOption":1,
+      "displayType":1,
+      "defaultOption":0,
       "options":[
         {
-          "name":"Starting location 1",
+          "name":"Survival together",
           "desc":"The first starting location"
         },
         {
-          "name":"Starting location 2",
+          "name":"Mod missing",
           "desc":"The second starting location"
         },
         {
-          "name":"Starting location 3",
+          "name":"Survival together classic",
+          "desc":"The third starting location"
+        },
+        {
+          "name":"Survival default plus",
+          "desc":"The third starting location"
+        },
+        {
+          "name":"Complete darkness",
+          "desc":"The third starting location"
+        },
+        {
+          "name":"Cave",
+          "desc":"The third starting location"
+        },
+        {
+          "name":"Cave plus",
           "desc":"The third starting location"
         }
       ]
     },
     {
-      "configName":"Starting location2",
+      "configName":"Task set",
       "configDesc":"Rawr I'm a description",
       "displayType":1,
       "defaultOption":1,
       "options":[
         {
-          "name":"Starting location 1",
+          "name":"Classic",
           "desc":"The first starting location"
         },
         {
-          "name":"Starting location 2",
+          "name":"Default",
           "desc":"The second starting location"
         },
         {
-          "name":"Starting location 3",
+          "name":"Cave default",
           "desc":"The third starting location"
         }
       ]
     },
     {
-      "configName":"Starting location3",
+      "configName":"Starting location",
       "configDesc":"Rawr I'm a description",
-      "displayType":2,
+      "displayType":1,
       "defaultOption":1,
       "options":[
         {
-          "name":"Starting location 1",
+          "name":"Caves",
           "desc":"The first starting location"
         },
         {
-          "name":"Starting location 2",
+          "name":"Default",
           "desc":"The second starting location"
         },
         {
-          "name":"Starting location 3",
+          "name":"Plus",
+          "desc":"The third starting location"
+        },
+        {
+          "name":"Darkness",
           "desc":"The third starting location"
         }
       ]
     },
     {
-      "configName":"Starting location3",
+      "configName":"World size",
+      "configDesc":"Rawr I'm a description",
+      "displayType":0,
+      "defaultOption":2,
+      "options":[
+        {
+          "name":"Small",
+          "desc":"The first starting location"
+        },
+        {
+          "name":"Medium",
+          "desc":"The second starting location"
+        },
+        {
+          "name":"Default",
+          "desc":"The third starting location"
+        },
+        {
+          "name":"Huge",
+          "desc":"The third starting location"
+        }
+      ]
+    },
+    {
+      "configName":"Branching",
+      "configDesc":"Rawr I'm a description",
+      "displayType":0,
+      "defaultOption":2,
+      "options":[
+        {
+          "name":"Never",
+          "desc":"The first starting location"
+        },
+        {
+          "name":"Least",
+          "desc":"The second starting location"
+        },
+        {
+          "name":"Default",
+          "desc":"The third starting location"
+        },
+        {
+          "name":"Most",
+          "desc":"The third starting location"
+        }
+      ]
+    },
+    {
+      "configName":"Branching2",
+      "configDesc":"Rawr I'm a description",
+      "displayType":2,
+      "defaultOption":"Default text",
+      "options":[
+        {
+          "name":"Never",
+          "desc":"The first starting location"
+        },
+        {
+          "name":"Least",
+          "desc":"The second starting location"
+        },
+        {
+          "name":"Default",
+          "desc":"The third starting location"
+        },
+        {
+          "name":"Most",
+          "desc":"The third starting location"
+        }
+      ]
+    },
+    {
+      "configName":"A boolean",
       "configDesc":"Rawr I'm a description",
       "displayType":3,
       "defaultOption":1,
       "options":[
         {
-          "name":"Starting location 1",
+          "name":false,
           "desc":"The first starting location"
         },
         {
-          "name":"Starting location 2",
+          "name":true,
           "desc":"The second starting location"
-        },
-        {
-          "name":"Starting location 3",
-          "desc":"The third starting location"
         }
       ]
     },
     {
-      "configName":"Starting location3",
+      "configName":"Branching4",
       "configDesc":"Rawr I'm a description",
       "displayType":4,
-      "defaultOption":1,
+      "defaultOption":2,
       "options":[
         {
-          "name":"Starting location 1",
+          "name":"Never",
           "desc":"The first starting location"
         },
         {
-          "name":"Starting location 2",
+          "name":"Least",
           "desc":"The second starting location"
         },
         {
-          "name":"Starting location 3",
+          "name":"Default",
+          "desc":"The third starting location"
+        },
+        {
+          "name":"Most",
           "desc":"The third starting location"
         }
       ]
