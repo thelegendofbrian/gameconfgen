@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <h1>Don't Starve Together Config Generator</h1>
+    <hr>
     <form action="/getconfig" method="get">
       <template v-for="entry in spoofData">
         <h2 :key="entry.category">{{ entry.category }}</h2>
@@ -10,6 +11,7 @@
           :config='item'
         />
       </template>
+      <hr>
       <button type="submit">Generate config</button>
     </form>
   </div>
@@ -20,7 +22,6 @@ import ConfigBlock from './components/ConfigBlock.vue'
 import Sample from './sample.json'
 
 export default {
-  name: 'App',
   data: function () {
     return {
       spoofData: Sample
@@ -40,5 +41,9 @@ export default {
   text-align: left;
   color: #2c3e50;
   margin-top: 10px;
+  margin-left: 15px;
+}
+button {
+  font-size: 1.2em;
 }
 </style>

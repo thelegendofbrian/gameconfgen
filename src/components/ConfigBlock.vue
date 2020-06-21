@@ -4,8 +4,8 @@
     <p>{{ config.configDesc }}</p>
 
     <template v-if="config.displayType === 0">
-      <label>{{ config.options[sliderValue].name }}</label><br>
-      <input type="range" min=0 :max="config.options.length-1" :name="config.configId" v-model="sliderValue" >
+      <label class="slider">{{ config.options[sliderValue].name }}</label><br>
+      <input type="range" class="slider" min=0 :max="config.options.length-1" :name="config.configId" v-model="sliderValue" >
     </template>
 
     <template v-if="config.displayType === 1">
@@ -57,18 +57,17 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+  .config-block {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 15px 0 15px;
+    margin-bottom: 15px;
+    width: 250px;
+  }
+  .config-block h3 {
+    margin-top: 0;
+  }
+  input.slider {
+    width: 90%;
+  }
 </style>
